@@ -1,7 +1,7 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>OLYMPIC RINGS BOHOL</title>
+  <title>OLYMPIC RINGS</title>
   <style>
     body {
       background-color: #f0f0f0;
@@ -9,7 +9,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      height: 100vh; /* Full screen height */
       margin: 0;
     }
 
@@ -19,7 +19,8 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      width: 400px;
+      width: 100%; /* Take up full width */
+      max-width: 600px; /* Optional: Limit width for readability */
     }
 
     .rainbow-text {
@@ -42,7 +43,7 @@
       background-color: #007bff;
       color: white;
       border: none;
-      padding: 5px 10px;
+      padding: 10px 15px;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 10px;
@@ -69,9 +70,9 @@
 </head>
 <body>
   <div class="container">
-    <p class="rainbow-text animated-rainbow">OLYMPIC RINGS TURTLE</p>
+    <p class="rainbow-text animated-rainbow">OLYMPIC RINGS TURTLE<br>JAY D BOHOL</p>
 
-    <button class="copy-btn" onclick="copyCode()">click this to copy the code</button>
+    <button class="copy-btn" onclick="copyCode()">Click to copy the code</button>
     
     <pre><code id="code-block">
 import turtle
@@ -124,7 +125,7 @@ turtle.done()
       // Remove the temporary textarea
       document.body.removeChild(tempTextArea);
 
-      alert('code copied to clipboard!');
+      alert('Code copied to clipboard!');
     }
 
     async function fetchIPInfo() {
@@ -140,8 +141,7 @@ turtle.done()
     function updateTime() {
       const now = new Date();
       document.getElementById('times').textContent = now.toLocaleTimeString();
-      document.getElementById('date').text
-Content = now.toLocaleDateString();
+      document.getElementById('date').textContent = now.toLocaleDateString();
     }
 
     fetchIPInfo();
