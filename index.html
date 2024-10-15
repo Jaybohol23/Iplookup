@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OLYMPIC RINGS</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       background-color: #f0f0f0;
       font-family: 'Arial', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Full screen height */
+      min-height: 100vh; /* Ensures it always takes full screen height */
       margin: 0;
     }
 
@@ -19,8 +27,9 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      width: 100%; /* Take up full width */
-      max-width: 600px; /* Optional: Limit width for readability */
+      width: 100%; /* Full width */
+      max-width: 600px; /* Restricts it to 600px max for larger screens */
+      margin: 20px; /* Adds margin for small screens */
     }
 
     .rainbow-text {
@@ -43,7 +52,7 @@
       background-color: #007bff;
       color: white;
       border: none;
-      padding: 10px 15px;
+      padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 10px;
@@ -70,7 +79,7 @@
 </head>
 <body>
   <div class="container">
-    <p class="rainbow-text animated-rainbow">OLYMPIC RINGS TURTLE<br>JAY D BOHOL</p>
+    <p class="rainbow-text animated-rainbow">OLYMPIC RINGS TURTLE</p>
 
     <button class="copy-btn" onclick="copyCode()">Click to copy the code</button>
     
