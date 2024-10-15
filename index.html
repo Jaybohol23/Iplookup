@@ -44,8 +44,14 @@
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
-            font-size: 16px; /* Increase the font size here */
+            font-size: 16px; /* Font size for the rest of the code */
             text-align: left;
+        }
+
+        h3 {
+            margin: 0; /* Remove default margin */
+            font-size: 20px; /* Font size for the import line */
+            color: #007bff; /* Optional: Change color of the import line */
         }
 
         button.copy-btn {
@@ -87,7 +93,7 @@
         <button class="copy-btn" onclick="copyCode()">Click this to copy the code</button>
         
         <pre><code id="code-block">
-import turtle
+<h3>import turtle</h3>
 # draw a circle with position
 def draw_circle(color, x, y):
     turtle.penup()
